@@ -209,7 +209,7 @@ git clone https://github.com/<your-username>/novatech-enterprise-support-platfor
 cd novatech-enterprise-support-platform
 ```
 
----
+
 
 ## 2. Create a virtual environment
 
@@ -237,7 +237,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
----
+
 
 ## 4. Configure environment variables
 
