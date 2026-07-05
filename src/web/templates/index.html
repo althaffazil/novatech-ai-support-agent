@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaTech Enterprise Support</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}"
+    >
+</head>
+
+<body>
+
+<div id="chat-container">
+
+    <div id="header">
+        NovaTech Enterprise Support
+    </div>
+
+    <div id="chat-box">
+
+        <div class="message ai-message">
+            Hello! I am the NovaTech AI Assistant.
+            How can I help you today?
+        </div>
+
+    </div>
+
+    <div id="input-area">
+
+        <input
+            id="user-input"
+            type="text"
+            placeholder="Type your message..."
+        >
+
+        <button id="send-btn">
+            Send
+        </button>
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+
+</body>
+</html>

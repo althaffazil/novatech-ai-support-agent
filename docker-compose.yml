@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  novatech-support:
+    build: .
+
+    container_name: novatech-support
+
+    ports:
+      - "5000:5000"
+
+    env_file:
+      - .env
+
+    volumes:
+      - ./data/vectordb:/app/data/vectordb
+      - ./data/memory:/app/data/memory
+
+    restart: unless-stopped
